@@ -1,4 +1,13 @@
-# Reverse-Shell
+```
+  _____                                     _____ _          _ _ 
+ |  __ \                                   / ____| |        | | |
+ | |__) |_____   _____ _ __ ___  ___ _____| (___ | |__   ___| | |
+ |  _  // _ \ \ / / _ \ '__/ __|/ _ \______\___ \| '_ \ / _ \ | |
+ | | \ \  __/\ V /  __/ |  \__ \  __/      ____) | | | |  __/ | |
+ |_|  \_\___| \_/ \___|_|  |___/\___|     |_____/|_| |_|\___|_|_|
+
+```
+
 A proof-of-concept reverse shell (written in C and ARM64/AARCH64 Assembly) and its handler (written in Python) for learning and educational purpose. The reverse shell is intended for x86 & x64 Linux based systems. However, by [using a cross-compiler](https://jensd.be/1126/linux/cross-compiling-for-arm-or-aarch64-on-debian-or-ubuntu), it can also be repurposed for ARM64/aarch64 Linux systems as well. Also, an ARM64 assembly code template has also been provided.
 
 # Usage
