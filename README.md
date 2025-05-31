@@ -56,9 +56,9 @@ uid=0(root) gid=0(root) groups=0(root)
 - Uses multithreaded handler to simultaneously handle receiving output from reverse shell, while sending commands from user
 - Implant/reverse shell uses dup2() call to duplicate STDIN, STDOUT, STDERR across the network socket used to communicate with handler
 
-# To Do
-- [ ] Refined error handling on handler and implant's end
-- [ ] Implement encryption for communication between handler and implant/reverse shell
+# Potential Improvements
+- Refined error handling on handler and implant's end
+- Implementation of encryption for communication between handler and implant/reverse shell
 
 # References
 - https://pymotw.com/2/socket/tcp.html
